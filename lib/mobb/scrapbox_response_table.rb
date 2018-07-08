@@ -1,7 +1,10 @@
 require "mobb/scrapbox_response_table/version"
+require 'mobb'
 
 module Mobb
   module ScrapboxResponseTable
-    # Your code goes here...
+    on "hello" do
+      "hello, I'm mobb-scrapbox_response_table"
+    end
   end
 end
