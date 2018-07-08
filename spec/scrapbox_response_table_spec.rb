@@ -1,6 +1,6 @@
-RSpec.describe Mobb::ScrapboxResponseTable do
+RSpec.describe ScrapboxResponseTable do
   it "has a version number" do
-    expect(Mobb::ScrapboxResponseTable::VERSION).not_to be nil
+    expect(ScrapboxResponseTable::VERSION).not_to be nil
   end
 
   it "does something useful" do

@@ -1,15 +1,15 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "mobb/scrapbox_response_table/version"
+require "scrapbox_response_table/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "mobb-scrapbox_response_table"
-  spec.version       = Mobb::ScrapboxResponseTable::VERSION
+  spec.name          = "scrapbox_response_table"
+  spec.version       = ScrapboxResponseTable::VERSION
   spec.authors       = ["itiya"]
   spec.email         = ["fragment.vertex@gmail.com"]
 
-  spec.summary       = %q{Mobb app responds from scrapbox table.}
+  spec.summary       = %q{responds from scrapbox table.}
   spec.homepage      = "https://github.com/itiya"
   spec.license       = "MIT"
 
@@ -31,7 +31,6 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "mobb"
   spec.add_dependency "scrapbox_table_fetcher", "~> 0.1.0"
 
   spec.add_development_dependency "bundler", "~> 1.16"

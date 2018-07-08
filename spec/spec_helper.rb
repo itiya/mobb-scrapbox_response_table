@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "mobb/scrapbox_response_table"
+require "scrapbox_response_table"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
