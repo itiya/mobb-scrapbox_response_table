@@ -11,7 +11,7 @@ module ScrapboxResponseTable
     end
 
     def response(key)
-      @target ||= p @fetcher.fetch(@page).select {|table| table.name == @table}[0]
+      @target ||= @fetcher.fetch(@page).select {|table| table.name == @table}[0]
       @target.search_row('key', key)[0]['url']
     end
   end
