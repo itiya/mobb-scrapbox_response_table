@@ -16,5 +16,10 @@ module ScrapboxResponseTable
       @target ||= @fetcher.fetch(@page).select {|table| table.name == @table}[0]
       @target.search_row(@key_column, key)[0][@response_column]
     end
+
+    def random_response
+      @target ||= @fetcher.fetch(@page).select {|table| table.name == @table}[0]
+      @target.random_row[@response_column]
+    end
   end
 end
